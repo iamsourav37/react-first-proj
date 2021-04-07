@@ -5,7 +5,7 @@ function LoginForm() {
     <>
       <form className="login-form" action="#">
         Email :
-        <input type="email" placeholder="example@example.com" required="true" />
+        <input type="email" placeholder="example@example.com" />
         <br />
         Password : <input type="password" placeholder="123456" />
         <br />
