@@ -7,12 +7,14 @@ const GetTime = (props) => {
   function updateTime() {
     setTime(new Date().toLocaleTimeString());
   }
+
+  setInterval(updateTime, 1000);
   return (
     <div className="time-div">
       <h1 className="time-data">{time}</h1>
-      <button className="btn" onClick={updateTime}>
+      {/* <button className="btn" onClick={updateTime}>
         Get Time
-      </button>
+      </button> */}
     </div>
   );
 };
