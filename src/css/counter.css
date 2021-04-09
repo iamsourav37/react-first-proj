@@ -1,0 +1,37 @@
+.counter-div {
+  background-color: lightcoral;
+  border: 2px solid;
+  position: absolute;
+  height: 400px;
+  line-height: 80px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+.btn {
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: 10px;
+  background-color: blueviolet;
+  border: 2px solid black;
+  cursor: pointer;
+  color: azure;
+  padding: 15px 32px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+.btn:hover {
+  background-color: chartreuse;
+  color: brown;
+  transition: 0.2s;
+}
+.counter-data {
+  margin-top: 100px;
+  color: white;
+  font-size: 60px;
+}

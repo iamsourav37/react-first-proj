@@ -7,7 +7,7 @@ function Card(props) {
       <img src={props.imgUrl} alt="place-img-loading" className="card-img" />
       <h1 className="card-head">{props.placeName}</h1>
       <p className="card-desc">{props.desc}</p>
-      <button className="card-btn">Book a trip</button>
+      <button className="card-btn">Book a trip </button>
     </div>
   );
 }
