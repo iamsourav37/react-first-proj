@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Component/Header";
-import Counter from "./Component/Counter";
+import GetTime from "./Component/GetTime";
 
 import "./css/index.css";
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Header msg={msg} />
-      <Counter />
+      <GetTime />
     </>
   );
 }

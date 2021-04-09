@@ -3,6 +3,7 @@ import "../css/counter.css";
 
 function Counter(props) {
   const [counter, setCounter] = useState(10);
+  console.log("COUNTER VALUE :", counter);
 
   const increase = () => {
     setCounter(counter + 1);
