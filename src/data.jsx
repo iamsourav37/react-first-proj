@@ -35,6 +35,13 @@ const placesData = [
     name: "Varanasi",
     desc: `One of the oldest continually inhabited cities in the world, Varanasi is arguably the holiest place in India. The spiritual activities take place along the sacred Ganges River, where pilgrims bathe and mourners cremate recently deceased relatives in plain view of passersby.`,
   },
+  {
+    id: 6,
+    imgUrl:
+      "https://www.planetware.com/wpimages/2019/08/india-top-attractions-goa-beaches.jpg",
+    name: "Goa",
+    desc: `Goa's more than 60 miles of coastline is home to some of the world's loveliest beaches, each with their own particular appeal. For those looking for peace and quiet, isolated Agonda Beach is a good choice, while Calangute Beach is by far the most commercial and crowded.`,
+  },
 ];
 
 export default placesData;
