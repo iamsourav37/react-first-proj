@@ -2,31 +2,38 @@ import React, { useState } from "react";
 import "../css/formExample.css";
 
 function FormExample() {
-  let formValue = "";
+  const [fName, setFName] = useState("");
+  const [lName, setLName] = useState("");
+  const [greetings, setGreetings] = useState("");
 
-  const [name, setName] = useState("");
-  const [password, setPass] = useState("");
-
-  const onChangeInputEvent = (event) => {
-    formValue = event.target.value;
+  const fNameChangeInputEvent = (event) => {
+    setFName(event.target.value);
   };
-
-  const changeHandler = (event) => {
+  const lNameChangeInputEvent = (event) => {
+    setLName(event.target.value);
+  };
+  const onSubmitForm = (event) => {
     event.preventDefault();
-    console.log(event);
-    setName(formValue);
+    let fullName = `${fName} ${lName}`;
+    setGreetings(fullName);
   };
 
   return (
     <div className="form-div">
-      <h1>Hello {name}</h1>
-      <form onSubmit={changeHandler}>
+      <h1>Hello {greetings}</h1>
+      <form onSubmit={onSubmitForm}>
         <input
           type="text"
-          placeholder="Enter Your Username"
-          onChange={onChangeInputEvent}
+          placeholder="Firstname"
+          onChange={fNameChangeInputEvent}
+          value={fName}
         />{" "}
-        <input type="password" placeholder="Enter Password" />
+        <input
+          type="text"
+          placeholder="Lastname"
+          onChange={lNameChangeInputEvent}
+          value={lName}
+        />
         <button type="submit" className="btn">
           Submit
         </button>
