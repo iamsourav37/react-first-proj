@@ -2,30 +2,35 @@ import React, { useState } from "react";
 import "../css/formExample.css";
 
 function FormExample() {
-  let formValue;
+  let formValue = "";
 
-  const [msg, setMsg] = useState("Hello");
+  const [name, setName] = useState("");
+  const [password, setPass] = useState("");
 
   const onChangeInputEvent = (event) => {
     formValue = event.target.value;
   };
 
-  const changeHandler = () => {
-    let msg = `Hello ${formValue}`;
-    setMsg(msg);
+  const changeHandler = (event) => {
+    event.preventDefault();
+    console.log(event);
+    setName(formValue);
   };
 
   return (
     <div className="form-div">
-      <h1>{msg}</h1>
-      <input
-        type="text"
-        placeholder="Enter Your Name"
-        onChange={onChangeInputEvent}
-      />
-      <button className="btn" onClick={changeHandler}>
-        Submit
-      </button>
+      <h1>Hello {name}</h1>
+      <form onSubmit={changeHandler}>
+        <input
+          type="text"
+          placeholder="Enter Your Username"
+          onChange={onChangeInputEvent}
+        />{" "}
+        <input type="password" placeholder="Enter Password" />
+        <button type="submit" className="btn">
+          Submit
+        </button>
+      </form>
     </div>
   );
 }
