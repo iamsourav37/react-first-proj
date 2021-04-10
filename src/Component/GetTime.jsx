@@ -11,12 +11,11 @@ const GetTime = (props) => {
   setInterval(updateTime, 1000);
   return (
     <div className="time-div">
-      <h1 className="time-data">{time}</h1>
+      <h1 className="time-data">⏲️ Current Time : {time}</h1>
       {/* <button className="btn" onClick={updateTime}>
         Get Time
       </button> */}
     </div>
   );
 };
-
 export default GetTime;
