@@ -1,0 +1,44 @@
+.form-div {
+  width: 100%;
+  height: 60vh;
+  background-color: darkgoldenrod;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-div h1 {
+  color: white;
+  background-color: transparent;
+  text-shadow: 0 2px 2px black;
+}
+
+.form-div input {
+  width: 30%;
+  font-size: 20px;
+  padding: 14px 20px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.btn {
+  line-height: 20px;
+  padding: 9px 40px;
+  background-color: blueviolet;
+  color: white;
+  border: 2px solid blueviolet;
+  outline: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+}
+.btn:hover {
+  color: bisque;
+  background-color: darkslateblue;
+  border: 2px solid;
+}

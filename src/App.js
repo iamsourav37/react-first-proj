@@ -1,16 +1,16 @@
 import React from "react";
 import Header from "./Component/Header";
-import GetTime from "./Component/GetTime";
+import FormExample from "./Component/Form";
 
 import "./css/index.css";
 
-const msg = `React Hooks 🍾`;
+const msg = `React Hooks & Event`;
 
 function App() {
   return (
     <>
       <Header msg={msg} />
-      <GetTime />
+      <FormExample />
     </>
   );
 }
