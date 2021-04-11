@@ -4,7 +4,7 @@ import MaterialUiDemo from "./Component/MaterialUiDemo";
 
 import "./css/index.css";
 
-const msg = `React Hooks & Event`;
+const msg = `Material UI with React`;
 
 function App() {
   return (
