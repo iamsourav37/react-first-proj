@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./Component/Header";
-import BootstarapDemo from "./Component/BootstrapDemo";
+import Header from "./Component/Compo_A/Header";
+import Blog from "./Component/Compo_B/Blog";
 
-import "./css/index.css";
+import "./css/app.css";
 
 const msg = `Bootstrap with React`;
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Header msg={msg} />
-      <BootstarapDemo />
+      <Blog />
     </>
   );
 }
