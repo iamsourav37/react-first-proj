@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../css/GetTime.css";
+import "../../css/GetTime.css";
 
 const GetTime = (props) => {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
