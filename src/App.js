@@ -1,16 +1,13 @@
 import React from "react";
-import Header from "./Component/Compo_A/Header";
-import Blog from "./Component/Compo_B/Blog";
+import AxiosDemo from "./Component/Comp_D/AxiosDemo";
 
 import "./css/app.css";
 
-const msg = `Bootstrap with React`;
-
 function App() {
+  console.log("App component called");
   return (
     <>
-      <Header msg={msg} />
-      <Blog />
+      <AxiosDemo />
     </>
   );
 }

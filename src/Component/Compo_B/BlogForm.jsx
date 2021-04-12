@@ -1,6 +1,8 @@
 import React from "react";
 
 const BlogForm = (props) => {
+  console.log("BlogForm component called");
+
   const onSubmit = (event) => {
     event.preventDefault();
     props.onFormSubmit(event);

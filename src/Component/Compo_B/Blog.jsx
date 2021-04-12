@@ -9,6 +9,7 @@ const divStyle = {
 };
 
 const Blog = () => {
+  console.log("Blog component called");
   const [blogs, setBlogs] = useState([
     {
       id: Math.random(),

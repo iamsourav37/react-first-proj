@@ -23,6 +23,8 @@ function ListItems(props) {
 }
 
 const BlogList = (props) => {
+  console.log("BlogList component called");
+
   const listItems = props.blogs.map((value, index) => {
     return (
       <ListItems key={index} value={value} deleteHandle={props.deleteHandle} />
