@@ -6,6 +6,7 @@ import Counter from "./Component/Compo_A/Counter";
 import GetTime from "./Component/Compo_A/GetTime";
 import ShowGreetings from "./Component/Compo_A/ShowGreetings";
 import ErrorPage from "./Component/Compo_C/ErrorPage";
+import Menu from "./Component/Compo_C/Menu";
 
 import "./css/app.css";
 
@@ -13,6 +14,7 @@ function App() {
   console.log("App component called");
   return (
     <>
+      <Menu />
       <Switch>
         <Route exact path="/" component={ShowGreetings} />
         <Route path="/api" component={AxiosDemo} />
