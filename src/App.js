@@ -5,6 +5,7 @@ import AxiosDemo from "./Component/Comp_D/AxiosDemo";
 import Counter from "./Component/Compo_A/Counter";
 import GetTime from "./Component/Compo_A/GetTime";
 import ShowGreetings from "./Component/Compo_A/ShowGreetings";
+import ErrorPage from "./Component/Compo_C/ErrorPage";
 
 import "./css/app.css";
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/api" component={AxiosDemo} />
         <Route path="/counter" component={Counter} />
         <Route path="/time" component={GetTime} />
+        <Route component={ErrorPage} />
       </Switch>
     </>
   );
